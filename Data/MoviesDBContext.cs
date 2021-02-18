@@ -1,16 +1,20 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Movies.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Movies.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class MoviesDBContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public MoviesDBContext(DbContextOptions<MoviesDBContext> options)
             : base(options)
         {
         }
+
+        public DbSet<MoviesDAL> Movies { get; set; }
+
     }
 }
