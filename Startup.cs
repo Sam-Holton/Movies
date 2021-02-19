@@ -31,8 +31,13 @@ namespace Movies
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<MoviesDBContext>();
+
+            services.AddHttpClient<OMDbClient>(httpClient =>
+            {
+                httpClient.BaseAddress = new Uri("http://www.omdbapi.com/?apikey=7e150349&");
+            });
 
             services.AddControllersWithViews();
             services.AddRazorPages();

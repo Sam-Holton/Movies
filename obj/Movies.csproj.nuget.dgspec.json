@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bzztt\\source\\repos\\Movies\\Movies.csproj": {}
+    "C:\\Users\\bzztt\\source\\repos\\movies\\Movies.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bzztt\\source\\repos\\Movies\\Movies.csproj": {
+    "C:\\Users\\bzztt\\source\\repos\\movies\\Movies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bzztt\\source\\repos\\Movies\\Movies.csproj",
+        "projectUniqueName": "C:\\Users\\bzztt\\source\\repos\\movies\\Movies.csproj",
         "projectName": "Movies",
-        "projectPath": "C:\\Users\\bzztt\\source\\repos\\Movies\\Movies.csproj",
+        "projectPath": "C:\\Users\\bzztt\\source\\repos\\movies\\Movies.csproj",
         "packagesPath": "C:\\Users\\bzztt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bzztt\\source\\repos\\Movies\\obj\\",
+        "outputPath": "C:\\Users\\bzztt\\source\\repos\\movies\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\bzztt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -82,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
