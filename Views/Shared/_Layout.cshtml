@@ -20,11 +20,16 @@
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                            <div class="col-xs-6">
+                                <form class="input-group" asp-controller="HomeController" asp-action="SearchResult" method="post" >
+                                    <input type="text" class="form-control" asp-for="MovieTitle" placeholder="Title Search..." required>
+                                    <input type="text" class="form-control" asp-for="MovieYear" placeholder="Year (Optional)">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default">Search</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </li>                        
                     </ul>
                 </div>
             </div>

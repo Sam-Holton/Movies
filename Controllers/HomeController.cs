@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Movies.Data;
 using Movies.Models;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,12 @@ namespace Movies.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly OMDbClient _oMDbClient;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, OMDbClient oMDbClient)
         {
             _logger = logger;
+            _oMDbClient = oMDbClient;
         }
 
         public IActionResult Index()
@@ -23,7 +26,7 @@ namespace Movies.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult SearchResult()
         {
             return View();
         }
